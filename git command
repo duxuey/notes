@@ -1,0 +1,42 @@
+1、set commit username and email：
+
+git config --global user.name "your name"
+git config --global user.email "your email"
+
+2、create new branch
+
+git checkout -b newBranchName   ##example： git checkout -b test  will create a new branch named test
+
+3、show all branch
+
+git branch 
+
+4、push this new branch to github
+
+git push origin newBranchName  
+##example： git push origin test will push this new branch to github，otherwise cannot see this branch in github
+
+5、set push repository
+
+git push --set-upstream origin branchName
+
+6、use VSCode to clone repository
+steps: open cmd. cd to workspace where you want to store this project. execute 'git clone repository_url'
+then will let you enter rsa_password,after enter,this project will download to local workspace.
+after clone，need to pull the latest code.
+
+============================find example===============================================================================
+C:\workspace\git\angular-web>git checkout -b pools //create new branch
+Switched to a new branch 'pools'
+M       package.json
+C:\workspace\git\angular-web>git branch  //show all branches
+  master
+* pools
+C:\workspace\git\angular-web>git push origin pools  //push to github
+Total 0 (delta 0), reused 0 (delta 0)
+To github.test.com:TestGroup/angular-web.git
+ * [new branch]      pools -> pools
+C:\workspace\git\angular-web>git push --set-upstream origin pools /设置push 
+repository 
+
+
